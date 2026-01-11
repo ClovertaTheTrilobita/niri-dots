@@ -1,0 +1,8 @@
+[submodule ".config/niri"]
+    path = .config/niri
+    url = https://github.com/ClovertaTheTrilobita/niri-config.git
+
+[submodule ".config/waybar"]
+    path = .config/waybar
+    url = https://github.com/ClovertaTheTrilobita/waybar-config.git
+
