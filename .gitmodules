@@ -1,8 +1,10 @@
 [submodule ".config/niri"]
-    path = .config/niri
-    url = https://github.com/ClovertaTheTrilobita/niri-config.git
+  path = .config/niri
+  url = https://github.com/ClovertaTheTrilobita/niri-config.git
+  branch = master
 
 [submodule ".config/waybar"]
-    path = .config/waybar
-    url = https://github.com/ClovertaTheTrilobita/waybar-config.git
+  path = .config/waybar
+  url = https://github.com/ClovertaTheTrilobita/waybar-config.git
+  branch = retro
 
