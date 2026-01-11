@@ -164,10 +164,10 @@ if [ "$family" = "arch" ]; then
 
       if [[ -z "$aur_helper" ]]; then
         echo "Continue installing using pacman, replacing swaylock-fancy with swaylock"
-        sudo pacman -S --needed cava fastfetch fuzzel kitty mako niri swaylock swaync waybar wlogout wofi swaybg swww sddm cliphist
+        sudo pacman -S --needed cava cliphist fastfetch fuzzel kitty mako niri swaylock swaync waybar wlogout wofi swaybg swww sddm cliphist
       else
         echo "Installing packages..."
-        "$aur_helper" -S --needed cava fastfetch fuzzel kitty mako niri swaylock-fancy-git swaync waybar wlogout wofi swaybg swww sddm cliphist
+        "$aur_helper" -S --needed cava cliphist fastfetch fuzzel kitty mako niri swaylock-fancy-git swaync waybar wlogout wofi swaybg swww sddm cliphist
       fi
 
       echo "Setting up SDDM..."
