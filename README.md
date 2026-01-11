@@ -2,6 +2,8 @@
 
 > Though I'm not yet sure if this can be called a dotfile since it's so simple.
 
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/a16690d6-b45d-454c-87b4-a828e7cf02ca" />
+
 Every time when I re-install my PC, I always feels like to try some new dotfiles. But as I searched through Internet the dotfiles I found were whether not stable or deeply customized and hard to make changes.
 
 So I began the long and time-costing Niri customization.
