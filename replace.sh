@@ -5,7 +5,7 @@ set -euo pipefail
 echo "This is a really simple script that helps you move all config files into place."
 echo "So you don't need to replace them one by one."
 echo "Make sure you have the following packages installed (if you want to use them):"
-echo "cava fastfetch fuzzel kitty mako niri swaylock swaync waybar wlogout wofi sddm"
+echo "cava fastfetch fuzzel kitty mako niri swaylock swaync swww swaybg waybar wlogout wofi sddm"
 
 echo "Do you wish to continue?[y/N]"
 
@@ -74,6 +74,11 @@ for p in "$src"/*; do
   cp -a -- "$p" "$dst/"
 done
 shopt -u nullglob dotglob
+
+chmod +x "$HOME/.config/niri/scripts/switch-wallpaper.sh"
+if [ -x "$HOME/.config/niri/scripts/switch-wallpaper.sh" ] && [ -f "$HOME/.config/niri/wallpapers/sunset.jpg" ]; then
+  "$HOME/.config/niri/scripts/switch-wallpaper.sh" "$HOME/.config/niri/wallpapers/sunset.jpg"
+fi
 
 echo "Do you wish to use the grub theme from https://github.com/mateosss/matter?[Y/n]"
 while true; do

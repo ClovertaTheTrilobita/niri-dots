@@ -164,10 +164,10 @@ if [ "$family" = "arch" ]; then
 
       if [[ -z "$aur_helper" ]]; then
         echo "Continue installing using pacman, replacing swaylock-fancy with swaylock"
-        sudo pacman -S --needed cava fastfetch fuzzel kitty mako niri swaylock swaync waybar wlogout wofi sddm
+        sudo pacman -S --needed cava fastfetch fuzzel kitty mako niri swaylock swaync waybar wlogout wofi swaybg swww sddm
       else
         echo "Installing packages..."
-        "$aur_helper" -S --needed cava fastfetch fuzzel kitty mako niri swaylock-fancy-git swaync waybar wlogout wofi sddm
+        "$aur_helper" -S --needed cava fastfetch fuzzel kitty mako niri swaylock-fancy-git swaync waybar wlogout wofi swaybg swww sddm
       fi
 
       echo "Setting up SDDM..."
@@ -213,6 +213,6 @@ if [ "$family" = "arch" ]; then
   done
 else
   echo "Your Distro is not supported yet, Please install these needed packages manually:"
-  echo "cava fastfetch fuzzel kitty mako niri swaylock swaync waybar wlogout wofi sddm"
+  echo "cava fastfetch fuzzel kitty mako niri swaylock swaync swww swagbg waybar wlogout wofi sddm"
   echo "You can use the replace.sh to replace all the configs after install. :)"
 fi
