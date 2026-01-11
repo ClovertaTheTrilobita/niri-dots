@@ -30,6 +30,15 @@ chmod +x install.sh
 >
 > This script should only be used when you just setup your system and haven't install anything yet. It might (though the possibilities are low) break some of your packages since it'll do packages installations for you.
 
+After rebooting your system in to Niri, if you want to use my wallpaper, simply execute
+
+```shell
+chmod +x $HOME/.config/niri/scripts/switch-wallpaper.sh
+$HOME/.config/niri/scripts/switch-wallpaper.sh $HOME/.config/niri/wallpapers/sunset.jpg
+```
+
+Note that this script doesn't install packages that might deeply effect your system e.g. `powerprofilesctl`, you have the freedom to configure it your self :p
+
 ### If you already done some configuration
 
 That's even more simple!
@@ -47,14 +56,14 @@ This will replace some of your config files (It will make backups).
 
 ### Manual installation
 
-I guess this dot might be a bit too easy to use a installation script.
+I guess this dot might be a bit too easy to use an installation script.
 
 #### Arch Linux
 
 ##### 1. Install packages
 
 ```shell
-yay -S --needed cava fastfetch fuzzel kitty mako niri swaylock-fancy-git swaync waybar wlogout wofi sddm
+yay -S --needed cava cliphist fastfetch fuzzel kitty mako niri swaylock swaync swww swaybg waybar wlogout wofi sddm
 ```
 
 ##### 2. Copy configuration files
