@@ -99,4 +99,4 @@ This repo contains code and inspiration from:
 - **[catppuccin/fuzzel](https://github.com/catppuccin/fuzzel)** for `fuzzel`
 - **[mateosss/matter](https://github.com/mateosss/matter)** for `grub`
 
-This repo is licensed under `MIT LICENSE`, you can use it what ever you want =)
+This repo is licensed under `MIT LICENSE`, you can use it whatever you like =)
