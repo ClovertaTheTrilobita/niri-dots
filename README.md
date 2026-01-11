@@ -83,7 +83,20 @@ cd matter
 
 I recommend using this sddm theme [Keyitdev/sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme). You can install it with simply
 
-```
+```shell
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)"
 ```
 
+<br>
+
+## ⚖️ Code and Licenses
+
+This repo contains code and inspiration from:
+
+- **[catppuccin/waybar](https://github.com/catppuccin/waybar)**, **[jvc84/wayves](https://github.com/jvc84/wayves)**, **[DerAnsari/hyprland-dots](https://github.com/DerAnsari/hyprland-dots/tree/main/waybar/)** for `waybar`.
+- **[catppuccin/wlogout](https://github.com/catppuccin/wlogout)**, **[wolf-yuan/dotfiles](https://gitlab.com/wolf-yuan/dotfiles/-/blob/main/.config/wlogout/style.css?ref_type=heads)** for `wlogout`
+- **[LierB/fastfetch](https://github.com/LierB/fastfetch)** for `fastfetch`
+- **[catppuccin/fuzzel](https://github.com/catppuccin/fuzzel)** for `fuzzel`
+- **[mateosss/matter](https://github.com/mateosss/matter)** for `grub`
+
+This repo is licensed under `MIT LICENSE`, you can use it what ever you want =)
