@@ -4,6 +4,8 @@ set -euo pipefail
 
 echo "This is a really simple script that helps you move all config files into place."
 echo "So you don't need to replace them one by one."
+echo "Make sure you have the following packages installed (if you want to use them):"
+echo "cava fastfetch fuzzel kitty mako niri swaylock swaync waybar wlogout wofi sddm"
 
 echo "Do you wish to continue?[y/N]"
 

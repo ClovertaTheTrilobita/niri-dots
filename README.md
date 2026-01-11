@@ -14,5 +14,65 @@ Okay so lets talk about how to use.
 
 ## Installation
 
+### Clean Install
+
 The installation script currently only supports Arch Linux if you are starting from a clean system installation environment.
+
+```shell
+git clone https://github.com/ClovertaTheTrilobita/niri-dots.git
+chmod +x install.sh
+./install.sh
+```
+
+> [!WARNING]
+>
+> This script should only be used when you just setup your system and haven't install anything yet. It might (though the possibilities are low) break some of your packages since it'll do packages installations for you.
+
+### If you already done some configuration
+
+That's even more simple!
+
+```shell
+chmod +x replace.sh
+./replace.sh
+```
+
+This will replace some of your config files (It will make backups).
+
+> [!NOTE]
+>
+> This script doesn't do any installations, so you need to install all packages by your self.
+
+### Manual installation
+
+I guess this dot might be a bit too easy to use a installation script.
+
+#### Arch Linux
+
+##### 1. Install packages
+
+```shell
+yay -S --needed cava fastfetch fuzzel kitty mako niri swaylock-fancy-git swaync waybar wlogout wofi sddm
+```
+
+##### 2. Copy configuration files
+
+copy all folders in `.config` to your own `XDG_CONFIG_HOME` (mostly `~/.config`)
+
+##### 3. Setup grub theme
+
+if you want to use the grub theme
+
+```shell
+cd matter
+./matter.py
+```
+
+##### 4.SDDM theme
+
+I recommend using this sddm theme [Keyitdev/sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme). You can install it with simply
+
+```
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)"
+```
 
