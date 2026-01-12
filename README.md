@@ -6,7 +6,7 @@
 
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/a342de25-90ca-487d-a854-2e0b8b2b3f3d" />
 
-<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/0bfc09d4-641d-4a7c-bc4b-0d4e30c5c1bf" />
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/4971cc93-436f-4d41-b757-a542c4b07486" />
 
 Every time when I re-install my PC, I always feels like to try some new dotfiles. But as I searched through Internet the dotfiles I found were whether not stable or deeply customized and hard to make changes.
 
