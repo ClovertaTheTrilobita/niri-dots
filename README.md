@@ -6,6 +6,8 @@
 
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/b7035dbc-09e9-4e0f-b684-5ce3042b7b9c" />
 
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/0bfc09d4-641d-4a7c-bc4b-0d4e30c5c1bf" />
+
 Every time when I re-install my PC, I always feels like to try some new dotfiles. But as I searched through Internet the dotfiles I found were whether not stable or deeply customized and hard to make changes.
 
 So I began the long and time-costing Niri customization.
