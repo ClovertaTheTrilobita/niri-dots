@@ -177,8 +177,8 @@ if [ "$family" = "arch" ]; then
 
       mkdir -p ~/.config
       shopt -s nullglob dotglob
-      echo "Copying $script_dir/.configs/* to ~/.config/"
-      cp -a "$script_dir/.configs/." ~/.config/
+      echo "Copying $script_dir/.config/* to ~/.config/"
+      cp -a "$script_dir/.config/." ~/.config/
       shopt -u nullglob dotglob
 
       echo "Do you wish to use the grub theme from https://github.com/mateosss/matter?[Y/n]"

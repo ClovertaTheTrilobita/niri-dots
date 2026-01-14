@@ -39,7 +39,7 @@ shopt -s nullglob dotglob
   echo "ERROR: $src not found"
   exit 1
 }
-src="$script_dir/.configs"
+src="$script_dir/.config"
 dst="$HOME/.config"
 ts="$(date +%Y%m%d-%H%M%S)"
 
