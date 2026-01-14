@@ -171,7 +171,7 @@ if [ "$family" = "arch" ]; then
       fi
 
       echo "Setting up SDDM..."
-      sudo systemctl enable --now sddm.service
+      sudo systemctl enable sddm.service
       sudo systemctl set-default graphical.target
       bash -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)" || echo "SDDM theme setup failed, skipped."
 
