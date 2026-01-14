@@ -178,7 +178,42 @@ if [ "$family" = "arch" ]; then
       mkdir -p ~/.config
       shopt -s nullglob dotglob
       echo "Copying $script_dir/.config/* to ~/.config/"
-      cp -r "$script_dir/.config/*" ~/.config/
+
+      src="$script_dir/.config"
+      dst="$HOME/.config"
+      ts="$(date +%Y%m%d-%H%M%S)"
+
+      mkdir -p "$dst"
+
+      # 遍历 .configs 下的顶层内容（目录/文件）
+      for p in "$src"/*; do
+        [ -e "$p" ] || continue
+        name="$(basename "$p")"
+        target="$dst/$name"
+
+        if [ -d "$target" ]; then
+          bak="${target}.bak-${ts}"
+          # 极小概率同名（例如同一秒多次运行），就追加序号
+          i=1
+          while [ -e "$bak" ]; do
+            bak="${target}.bak-${ts}-${i}"
+            i=$((i + 1))
+          done
+          mv -- "$target" "$bak"
+        elif [ -e "$target" ]; then
+          bak="${target}.bak-${ts}"
+          i=1
+          while [ -e "$bak" ]; do
+            bak="${target}.bak-${ts}-${i}"
+            i=$((i + 1))
+          done
+          mv -- "$target" "$bak"
+        fi
+
+        # 再复制新的进去
+        cp -a -- "$p" "$dst/"
+      done
+
       shopt -u nullglob dotglob
 
       echo "Do you wish to use the grub theme from https://github.com/mateosss/matter?[Y/n]"
