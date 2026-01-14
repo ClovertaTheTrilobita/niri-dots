@@ -24,8 +24,12 @@ Okay so lets talk about how to use.
 
 The installation script currently only supports Arch Linux if you are starting from a clean system installation environment.
 
+> [!IMPORTANT]
+>
+> Please pull the submodule together with the `--recurse-submodules` flag.
+
 ```shell
-git clone https://github.com/ClovertaTheTrilobita/niri-dots.git
+git clone --recurse-submodules https://github.com/ClovertaTheTrilobita/niri-dots.git
 chmod +x install.sh
 ./install.sh
 ```
