@@ -175,6 +175,9 @@ if [ "$family" = "arch" ]; then
       sudo systemctl set-default graphical.target
       bash -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)" || echo "SDDM theme setup failed, skipped."
 
+      echo "Setting up swaync..."
+      systemctl --user enable --now swaync.service
+
       mkdir -p ~/.config
       shopt -s nullglob dotglob
       echo "Copying $script_dir/.config/* to ~/.config/"
