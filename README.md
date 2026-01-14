@@ -26,7 +26,7 @@ The installation script currently only supports Arch Linux if you are starting f
 
 > [!IMPORTANT]
 >
-> Please pull the submodule together with the `--recurse-submodules` flag.
+> Please pull the submodule together with the `--recurse-submodules` fl
 
 ```shell
 git clone --recurse-submodules https://github.com/ClovertaTheTrilobita/niri-dots.git
@@ -38,11 +38,11 @@ chmod +x install.sh
 >
 > This script should only be used when you just setup your system and haven't install anything yet. It might (though the possibilities are low) break some of your packages since it'll do packages installations for you.
 
-After rebooting your system in to Niri, if you want to use my wallpaper, simply execute
+After rebooting your system in to Niri, if you want to switch wallpaper, simply execute
 
 ```shell
 chmod +x $HOME/.config/niri/scripts/switch-wallpaper.sh
-$HOME/.config/niri/scripts/switch-wallpaper.sh $HOME/.config/niri/wallpapers/sunset.jpg
+$HOME/.config/niri/scripts/switch-wallpaper.sh <path/to/your/walpaper.png>
 ```
 
 Note that this script doesn't install packages that might deeply effect your system e.g. `powerprofilesctl`, you have the freedom to configure it your self :p
@@ -71,7 +71,7 @@ I guess this dot might be a bit too easy to use an installation script.
 ##### 1. Install packages
 
 ```shell
-yay -S --needed cava cliphist fastfetch fuzzel kitty mako niri swaylock swaync swww swaybg waybar wlogout wofi sddm
+yay -S --needed ttf-iosevka-nerd ttf-hack cava imagemagick cliphist fastfetch fuzzel kitty mako niri swaylock-fancy-git swaync waybar wlogout wofi swaybg swww sddm cliphist
 ```
 
 ##### 2. Copy configuration files
